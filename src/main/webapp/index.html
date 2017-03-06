@@ -1,25 +1,587 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Java Web Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = "newappIcon" src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<!-- The "Hello World!" message comes from /SimpleServlet -->
-				<h1 id = "message"></h1>
-				
-				<p class='description'></p> Thanks for creating a <span class="blue">Liberty for Java Starter Application</span>.
-			</td>
-		</tr>
-	</table>
-	<!-- Call SimpleServlet to get the "Hello World" message  -->
-	<script type="text/javascript" src="index.js"></script>
-</body>
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)file://C:\Users\IBM_ADMIN\AppData\Local\Temp\SPA.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" ""><HTML><HEAD><META 
+content="IE=5.0000" http-equiv="X-UA-Compatible">
+   <TITLE> New Document </TITLE>   
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META name="GENERATOR" content="MSHTML 11.00.9600.18538">   
+<META name="Author" content="">   
+<META name="Keywords" content="">   
+<META name="Description" content="">  
+<SCRIPT type="text/javascript">
+
+function showNewFunWindow(funCol)
+{
+alert("Funct Col " + funCol);
+
+if(funCol ==1)
+
+toggle_visibility("Fun1");
+if(funCol ==2)
+
+toggle_visibility("Fun2");
+if(funCol ==3)
+
+toggle_visibility("Fun3");
+if(funCol ==4)
+
+toggle_visibility("Fun4");
+
+
+}
+
+
+function toggle_subvisibility(subdiv)
+{
+
+toggle_visibility("aidnew");
+
+e = document.getElementById(subdiv); 
+
+		
+if(e != null)
+		   e.style.display = 'block'; 
+
+
+}
+
+function showRow(funCol)
+{
+
+ 
+alert("Funct row  " + funCol);
+
+
+
+if(funCol ==1)
+
+toggle_subvisibility("nFun1");
+
+ 
+
+if(funCol ==2)
+
+toggle_subvisibility("nFun2");
+
+if(funCol ==3)
+
+toggle_subvisibility("nFun3");
+if(funCol ==4)
+
+toggle_subvisibility("nFun4");
+
+}
+function proceed()
+{
+
+ var dtypeObj = document.getElementById("dtype");
+
+ var atypeObj = document.getElementById("atype");
+
+ 
+
+  dty = dtypeObj.options[dtypeObj.selectedIndex].value;
+
+  aty = atypeObj.options[atypeObj.selectedIndex].value;
+
+
+  if( dty == "A" && aty == "N")
+  {
+toggle_visibility("aidnew");
+  }
+  if( dty == "A" && aty == "E")
+  {
+toggle_visibility("aidext");
+  }
+  if( dty == "A" && aty == "V")
+  {
+toggle_visibility("aidvie");
+  } 
+
+if( dty == "S" && aty == "N")
+  {
+toggle_visibility("srdnew");
+  }
+  if( dty == "S" && aty == "E")
+  {
+toggle_visibility("srdext");
+  }
+  if( dty == "S" && aty == "V")
+  {
+toggle_visibility("srdvie");
+  } 
+
+
+if( dty == "D" && aty == "N")
+  {
+toggle_visibility("ddnew");
+  }
+  if( dty == "D" && aty == "E")
+  {
+toggle_visibility("ddext");
+  }
+  if( dty == "D" && aty == "V")
+  {
+toggle_visibility("ddvie");
+  } 
+
+
+
+
+  }
+
+
+  
+  
+
+   function toggle_visibility(id) {
+
+    hideAll(); 
+
+
+var e = document.getElementById(id); 
+
+
+	
+if(e != null)
+		  e.style.display = 'block'; 
+
+  }
+
+
+
+  function hideAll()
+
+
+{
+
+
+
+  
+
+   e = document.getElementById("Env"); 
+
+		
+if(e != null)
+		   e.style.display = 'none'; 
+
+		   
+       
+
+		 e = document.getElementById("option"); 
+
+	
+if(e != null)
+		   e.style.display = 'none'; 
+
+
+   
+
+   e = document.getElementById("aidnew"); 
+
+		
+if(e != null)
+		   e.style.display = 'none'; 
+
+		   
+       
+
+		 e = document.getElementById("aidext"); 
+
+	
+if(e != null)
+		   e.style.display = 'none'; 
+
+		   
+		  
+e = document.getElementById("aidvie"); 
+
+		
+if(e != null)
+	
+e.style.display = 'none'; 
+
+
+			  e = document.getElementById("srdnew"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+ 
+
+  e = document.getElementById("srdext"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+			   e = document.getElementById("srdvie"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+
+			    e = document.getElementById("ddnew"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+
+			    e = document.getElementById("ddvie"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+
+
+
+e = document.getElementById("ddext"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+
+
+
+
+e = document.getElementById("Fun1"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+ 
+			   
+
+e = document.getElementById("Fun2"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+ 
+			   
+
+			   
+e = document.getElementById("Fun3"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+ 
+			   
+
+			   
+e = document.getElementById("Fun4"); 
+
+			 if(e != null)
+
+			  e.style.display = 'none'; 
+ 
+			   
+
+
+
+
+  }
+     
+   
+</SCRIPT>
+</HEAD>   
+<BODY align="center">
+<DIV id="Env">
+<TABLE width="30%" height="50%" border="1">
+  <TBODY>
+  <TR>
+    <TD width="30%" height="10%" align="center" style="color: white; 
+ background-color: rgb(7, 242, 125); 
+" 
+    colspan="2">Environment Selection </TD></TR>
+  <TR>
+    <TD align="center">Application </TD>
+    <TD align="center"><SELECT 
+        name="App"><OPTION>ASOC</OPTION><OPTION>USRP</OPTION><OPTION>GIOM</OPTION></SELECT></TD></TR>
+  <TR>
+    <TD align="center">Environment</TD>
+    <TD align="center"><SELECT 
+        name="App"><OPTION>DEV</OPTION><OPTION>ST</OPTION><OPTION>UAT</OPTION>PROD</SELECT></TD></TR>
+  <TR>
+    <TD width="30%" align="center" colspan="2"><INPUT onclick='toggle_visibility("option")' type="button" value="Proceed"> 
+    </TD></TR></TBODY></TABLE></DIV>
+
+<!-- for options -->
+
+<DIV id="Option" style="display: none; 
+">
+<TABLE width="30%" height="50%" border="1">
+  <TBODY>
+  <TR>
+    <TD width="30%" height="10%" align="center" style="color: white; 
+ background-color: rgb(7, 242, 125); 
+" 
+    colspan="2">Selecet Process to proceed  </TD></TR>
+  <TR>
+    <TD align="center">Select Process Document : </TD>
+    <TD align="center"><select id='dtype'><option value ="A">AID</option><option  value ="S">SRD</option><option  value ="D">DD</option></TD></TR>
+  <TR>
+       <TD align="center">Select Action to be performed </TD>
+    <TD align="center"><select id='atype'><option value="N">Create New Document</option><option  value="E">Enhance Exiting Document</option><option  value="V">View Document</option><option value="N">Open Draft Document for Edit</option></TD></TD></TR>
+  <TR>
+    
+    <TD width="30%" align="center" colspan="2"><INPUT onclick='proceed()' type="button" value="Proceed Process"> 
+      &nbsp; 
+&nbsp; 
+&nbsp; 
+&nbsp; 
+<!--INPUT onclick='toggle_visibility("ColAtt")' type="button" value="Create"--> 
+    </TD></TR></TBODY></TABLE></DIV>
+
+<!-- New Funciton Creation-->
+
+ <DIV id="Fun1" style="display:none;">
+
+ <TABLE border=1>
+ <TR>
+	<TD align ="center" style="color: white; background-color: rgb(7, 242, 125);">Adding New Function</TD>
+ </TR>
+ <TR>
+	<TD><TABLE>
+<TR>
+	<TD>Add New Function/Process Name :</TD>
+	<TD><input Type=text value ="new function" disabled></TD>
+</TR>
+<TR>
+	<TD>Description </TD>
+	<TD><input Type=text></TD>
+</TR>
+<TD colspan=2 align="center"><input type=button value="Add New Function" onclick=showRow("1")></TD>
+</TABLE></TD>
+ </TR>
+ </TABLE>
+</div>
+
+ 
+<DIV id="Fun2" style="display:none; ">
+
+ <TABLE border=1>
+ <TR>
+	<TD align ="center" style="color: white; background-color: rgb(7, 242, 125);">Adding New Function</TD>
+ </TR>
+ <TR>
+	<TD><TABLE>
+<TR>
+	<TD>Add New Function/Process Name :</TD>
+	<TD><input Type=text value ="new function" disabled></TD>
+</TR>
+<TR>
+	<TD>Description </TD>
+	<TD><input Type=text></TD>
+</TR>
+<TD colspan=2 align="center"><input type=button value="Add New Function" onclick=showRow("2")></TD>
+</TABLE></TD>
+ </TR>
+ </TABLE>
+</div>
+<DIV id="Fun3" style="display:none; ">
+
+ <TABLE border=1>
+ <TR>
+	<TD align ="center" style="color: white; background-color: rgb(7, 242, 125);">Adding New Function</TD>
+ </TR>
+ <TR>
+	<TD><TABLE>
+<TR>
+	<TD>Add New Function/Process Name :</TD>
+	<TD><input Type=text  value ="new function" disabled></TD>
+</TR>
+<TR>
+	<TD>Description </TD>
+	<TD><input Type=text></TD>
+</TR>
+<TD colspan=2 align="center"><input type=button value="Add New Function" onclick=showRow("3")></TD>
+</TABLE></TD>
+ </TR>
+ </TABLE>
+</div>
+
+<DIV id="Fun4" style="display:none; ">
+
+ <TABLE border=1>
+ <TR>
+	<TD align ="center" style="color: white; background-color: rgb(7, 242, 125);">Adding New Function</TD>
+ </TR>
+ <TR>
+	<TD><TABLE>
+<TR>
+	<TD>Add New Function/Process Name :</TD>
+	<TD><input Type=text  value ="new function" disabled></TD>
+</TR>
+<TR>
+	<TD>Description </TD>
+	<TD><input Type=text></TD>
+</TR>
+<TD colspan=2 align="center"><input type=button value="Add New Function" onclick=showRow("4")></TD>
+</TABLE></TD>
+ </TR>
+ </TABLE>
+</div>
+
+
+
+
+
+<!-- New AID Creation --> 
+
+<DIV id="aidnew" style="display: none; ">
+
+ 
+ <TABLE border =2 Align="center">
+ <TR>
+	<TD align ="center" style="color: white; background-color: rgb(7, 242, 125);">New AID Creation</TD>
+ </TR>
+ <TR>
+	<TD>
+	
+	<TABLE align="center" border=1>
+<TR>
+	<TD></TD>
+	<TD align="center">
+	
+	<TABLE border =0 width="30%" height="50%">
+ <TR>
+	<TD nowrap style="color: white; background-color: rgb(237, 14, 230);" >Service Name :</TD>
+	<TD  nowrap><input type = Text name ="serviceName"> </TD>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<TD  nowrap style="color: white; background-color: rgb(237, 14, 230);" >Service Type :</TD>
+	<TD  nowrap><select ><option>Webservice</option><option disabled>CORBA><option disabled>XML</option></TD>
+</TR>
+<TR>
+<TD style="color: white; background-color: rgb(237, 14, 230);" >Clients </TD>
+	<TD><input type = Text name ="client"</TD>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<TD style="color: white; background-color: rgb(237, 14, 230);" >Version </TD>
+	<TD>0.1</TD>
+	 
+</TR>
+<TR>
+	<TD style="color: white; background-color: rgb(237, 14, 230);" >Author</TD>
+	<TD><input type = Text name ="Author"</TD>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<TD style="color: white; background-color: rgb(237, 14, 230);" >Created Date </TD>
+	<TD><input type = Text name ="Date"</TD>
+</TR>
+<TR>
+	<TD colspan= 2></TD>
+	<TD></TD>
+	<TD></TD>
+	<TD></TD>
+</TR>
+</TABLE>
+	
+	</TD>
+	<TD></TD>
+	 
+</TR>
+<TR>
+	<TD colspan="3" align="center">
+	
+	<!-- Start Content for details -->
+	<TABLE align="center" border =1>
+	<TR>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);" >Field Name</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);">Data Type</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);">Length</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);">ValidValues</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);" nowrap>R/C/O</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);">Description</TD>
+		<TD  align="center" style="color: white; background-color: rgb(237, 14, 230);">Function</TD>
+	</TR>
+	<TR>
+	<TD align="center">1 </TD>
+		<TD align="center"><input type = Text> </TD>
+		<TD align="center"><select><option>Alphanumeric</option><option>Numeric</option><option>Character</option><Option>Boolean</Option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><p>Add values</p></TD>
+		<TD  align="center" ><select><option>O</option><option>C</option><option>R</option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><div id="nfun1" style="display: none;">new Function</div><br><input Type =button value =Add Process onclick="showNewFunWindow(1)"></TD>
+	</TR>
+	<TR>
+		<TD align="center">2 </TD>
+		<TD align="center"><input type = Text> </TD>
+		<TD align="center"><select><option>Alphanumeric</option><option>Numeric</option><option>Character</option><Option>Boolean</Option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><p>Add values</p></TD>
+		<TD  align="center" ><select><option>O</option><option>C</option><option>R</option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><div id="nfun2" style="display: none;">new Function</div><br><input Type =button value =Add Process onclick="showNewFunWindow(2)"></TD>
+	</TR>
+	<TR>
+		<TD align="center">3 </TD>
+		<TD align="center"><input type = Text> </TD>
+		<TD align="center"><select><option>Alphanumeric</option><option>Numeric</option><option>Character</option><Option>Boolean</Option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><p>Add values</p></TD>
+		<TD  align="center" ><select><option>O</option><option>C</option><option>R</option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><div id="nfun3" style="display: none;">new Function</div><br><input Type =button value =Add Process     onclick="showNewFunWindow(3)"></TD>
+	</TR>
+<div id="rownew" style="display: none;">
+	<TR>
+	
+		<TD align="center">4 </TD>
+		<TD align="center"><input type = Text> </TD>
+		<TD align="center"><select><option>Alphanumeric</option><option>Numeric</option><option>Character</option><Option>Boolean</Option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center" ><p>Add values</p></TD>
+		<TD  align="center" ><select><option>O</option><option>C</option><option>R</option></TD>
+		<TD  align="center" ><input type = Text></TD>
+		<TD  align="center"  nowrap><div id="nfun4" style="display: none;">new Function</div><br><input Type =button value =Add Process onclick="showNewFunWindow(4)">&nbsp;&nbsp;&nbsp;<input Type =button value =Add Process onclick="showNewFunWindow(4)">&nbsp;&nbsp;&nbsp;</TD>
+
+	</TR>
+			</div>
+	<TR>
+		<TD align="right" colspan=8><input type = button value="add More Rows" onclick="toggle_subvisibility('rownew')"> </TD>
+		 
+	</TR>
+	</TABLE>
+	
+	<!-- End  Content for details -->
+	</TD>
+	<tr>
+	<td  colspan=8 align="center"> <a><font color = blue>Save Doc</a>&nbsp;&nbsp;&nbsp;&nbsp;<a>Save as Draft</a>
+	</td>
+	 
+</TR>
+</TABLE>
+
+	</TD>
+	<tr><td align="center"><input type=button value ="Home" onclick='toggle_visibility("Env")'><input type=button value ="Options" onclick='toggle_visibility("option")'></td>
+ </TR>
+ </TABLE>
+</DIV>
+
+<!--  -->
+
+
+<DIV id="srdnew" style="display: none; 
+">
+<TABLE width="30%" height="50%" border="1">
+<td>New SRD </td>
+</table>
+ </DIV>
+
+
+<DIV id="ddnew" style="display: none; 
+">
+<TABLE width="30%" height="50%" border="1">
+<td>New DD </td>
+</table>
+ </DIV>
+
+
+
+
+ </BODY></HTML>
